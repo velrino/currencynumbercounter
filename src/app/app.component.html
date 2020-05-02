@@ -6,9 +6,9 @@
 		<h1>{{ counter |  currency:'BRL' }}</h1>
 	</div>
 	<div>
-		<input type="number">
+		<input type="number" [(ngModel)]="form.number" mask="99999999999">
 	</div>
 	<div>
-		<button (click)="counterNumber()"> again </button>
+		<button (click)="again()"> again </button>
 	</div>
 </div>
