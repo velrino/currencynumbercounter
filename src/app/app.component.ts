@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   counter: any = 0;
   form = {
     number: 5,
-    seconds: 5
+    seconds: 0.1
   };
 
   counterNumber(endNumber: number) {
