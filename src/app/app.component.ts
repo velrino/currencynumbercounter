@@ -23,7 +23,6 @@ export class AppComponent implements OnInit {
         self.counter = numjdskhds;
       }
     };
-    // This block will be executed 100 times.
     setInterval(funcNameHere, 70);
     funcNameHere();
   }
