@@ -15,7 +15,6 @@ export class AppComponent implements OnInit {
 
   counterNumber(endNumber: number) {
     console.log(endNumber);
-    var i = 0;
     this.counter = 0;
     const self = this;
     var funcNameHere = function() {
@@ -29,7 +28,7 @@ export class AppComponent implements OnInit {
         }
       }
     };
-    setInterval(funcNameHere, this.form.seconds);
+    setInterval(funcNameHere, (this.form.seconds*1000));
     funcNameHere();
   }
 
