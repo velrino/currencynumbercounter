@@ -1,3 +1,19 @@
 p {
   font-family: Lato;
 }
+
+.center {
+  height: 200px;
+  border: 3px solid green;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90vw;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+div {
+  display: block;
+}
