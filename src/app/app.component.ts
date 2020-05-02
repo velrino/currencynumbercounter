@@ -37,6 +37,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.counterNumber(1.57);
+    //this.counterNumber(1.57);
   }
 }
