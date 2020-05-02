@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   name = "Angular";
   counter: any = 0;
   form = {
-    number: 0,
+    number: 5,
     seconds: 5
   };
 
