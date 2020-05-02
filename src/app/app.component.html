@@ -1,12 +1,12 @@
 <div class="center">
 	<div>
-		<h1>Welcome to CounterNumber</h1>
+		<h1 #div>{{ render(div, 523)}}</h1>
 	</div>
 	<div>
 		<h1>{{ counter |  currency:'BRL' }}</h1>
 	</div>
 	<div>
-        <div>valor</div>
+      <div>valor</div>
 		<input type="text" [(ngModel)]="form.number" mask="99999999999">
 	</div>
   <div>

@@ -9,7 +9,7 @@ export class AppComponent implements OnInit {
   name = "Angular";
   counter: any = 0;
   form = {
-    number: 5,
+    number: 5.23,
     seconds: 100
   };
 
@@ -36,6 +36,11 @@ export class AppComponent implements OnInit {
   start() {
     console.log(this.form);
     this.counterNumber(this.form.number);
+  }
+
+  render(element, value){
+    element.innerHTML = 'Lore'
+    console.log(element)
   }
 
   ngOnInit() {
