@@ -28,11 +28,13 @@ export class AppComponent implements OnInit {
         }
       }
     };
+
     setInterval(funcNameHere, this.form.seconds);
     funcNameHere();
   }
 
   start() {
+    console.log(this.form);
     this.counterNumber(this.form.number);
   }
 
