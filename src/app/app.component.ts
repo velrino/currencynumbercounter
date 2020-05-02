@@ -32,11 +32,11 @@ export class AppComponent implements OnInit {
     funcNameHere();
   }
 
-  again() {
+  start() {
     this.counterNumber(this.form.number);
   }
 
   ngOnInit() {
-    //this.counterNumber(1.57);
+    this.start();
   }
 }
