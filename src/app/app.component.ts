@@ -10,7 +10,7 @@ export class AppComponent implements OnInit {
   counter: any = 0;
   form = {
     number: 5,
-    seconds: 0.1
+    seconds: 100
   };
 
   counterNumber(endNumber: number) {
@@ -28,7 +28,7 @@ export class AppComponent implements OnInit {
         }
       }
     };
-    setInterval(funcNameHere, (this.form.seconds*1000));
+    setInterval(funcNameHere, this.form.seconds);
     funcNameHere();
   }
 
