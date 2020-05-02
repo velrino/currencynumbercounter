@@ -9,7 +9,8 @@ export class AppComponent implements OnInit {
   name = "Angular";
   counter: any = 0;
   form = {
-    number: 0
+    number: 0,
+    seconds: 5
   };
 
   counterNumber(endNumber: number) {
@@ -28,7 +29,7 @@ export class AppComponent implements OnInit {
         }
       }
     };
-    setInterval(funcNameHere, 70);
+    setInterval(funcNameHere, this.form.seconds);
     funcNameHere();
   }
 

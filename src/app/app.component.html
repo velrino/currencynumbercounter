@@ -6,7 +6,12 @@
 		<h1>{{ counter |  currency:'BRL' }}</h1>
 	</div>
 	<div>
+        <div>valor</div>
 		<input type="text" [(ngModel)]="form.number" mask="99999999999">
+	</div>
+  <div>
+    <div>segundos</div>
+		<input type="text" [(ngModel)]="form.seconds" mask="9999">
 	</div>
 	<div>
 		<button (click)="again()"> again </button>
