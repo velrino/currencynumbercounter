@@ -8,26 +8,35 @@ import { Component, OnInit } from "@angular/core";
 export class AppComponent implements OnInit {
   name = "Angular";
   counter: any = 0;
+  form = {
+    number: 0
+  };
 
-  counterNumber() {
+  counterNumber(endNumber: number) {
+    console.log(endNumber);
     var i = 0;
     this.counter = 0;
-    const endNumber = 10.57;
     const self = this;
     var funcNameHere = function() {
       if (self.counter >= Math.floor(endNumber)) {
         clearInterval(this);
         self.counter = endNumber;
       } else {
-        let numjdskhds = parseFloat(self.counter) + 0.34;
-        self.counter = numjdskhds;
+        let numjdskhds = parseFloat(self.counter) + 0.05;
+        if (numjdskhds > 0) {
+          self.counter = numjdskhds;
+        }
       }
     };
     setInterval(funcNameHere, 70);
     funcNameHere();
   }
 
+  again() {
+    this.counterNumber(this.form.number);
+  }
+
   ngOnInit() {
-    this.counterNumber();
+    this.counterNumber(1.57);
   }
 }
